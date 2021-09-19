@@ -1,0 +1,11 @@
+html {
+  font-size: 16px;
+}
+html body {
+  margin: 0;
+  background: #ffffff;
+  font-family: "Gill Sans", sans-serif;
+  box-sizing: border-box;
+  overflow: auto;
+  height: -webkit-fill-available;
+}

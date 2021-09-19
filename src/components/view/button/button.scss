@@ -1,0 +1,25 @@
+@import '../../../assets/scss/main.scss';
+
+.btnWrapper {
+   @include flexLeftAlignedHorizontally;
+
+    .deleteBtn {
+        color: white;
+        border: none;
+        background: $greyColor;
+        padding: 1em 2em;
+        cursor: pointer;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+    
+    .addBtn {
+        @extend .deleteBtn;
+        background: $buttonColor;
+        margin: 1em 0;
+    }
+
+    @include screenType(tablet) {
+        justify-content: center;
+    }
+}

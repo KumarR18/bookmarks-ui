@@ -1,0 +1,44 @@
+{
+  "name": "bookmarks-ui",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test.unit": "stencil test --spec",
+    "test": "npm run test.unit --e2e --headless",
+    "test.ci": "npm run test.unit --e2e --ci",
+    "test.watch": "npm run test.unit --e2e --watchAll",
+    "test.e2e": "stencil test --e2e --headless",
+    "test.screenshot": "stencil test --e2e --screenshot",
+    "generate": "stencil generate",
+    "json-server": "json-server --watch db.json --port 8080",
+    "dev": "concurrently \"npm start\" \"npm run json-server\""
+  },
+  "devDependencies": {
+    "@stencil/core": "^2.6.0",
+    "@stencil/router": "^1.0.1",
+    "@stencil/sass": "^1.4.1",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.4",
+    "@types/puppeteer": "^5.4.3",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "puppeteer": "^5.5.0",
+    "rollup-plugin-node-polyfills": "^0.2.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@stencil/redux": "^0.2.0",
+    "axios": "^0.21.1",
+    "concurrently": "^6.2.0",
+    "json-server": "^0.16.3",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sweetalert2": "^11.0.17",
+    "ts-node": "^10.0.0"
+  }
+}

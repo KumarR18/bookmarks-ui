@@ -1,0 +1,132 @@
+@import '../../assets/scss/main.scss';
+
+
+.main {
+    @include flexLeftAlignedVertically;
+    margin: 0em 2em 3em 2em;
+    width: calc(66vw - 4em);
+
+    .link {
+        color: $textColor;
+        word-break: break-all;
+    }
+
+    .filter {
+        position: relative;
+        min-width: calc(66vw - 4em);
+
+        .filterField {
+            width: 60%;
+            padding: 1em 3em;
+            margin: 0.5em 0;
+            @include flexCenter;
+            border: 1px solid $greyColor;
+            border-radius: 0.25em;
+            margin-top: 0;
+        }
+
+        .searchIcon {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 0.7em;
+            left: 0.8em;
+        }
+    }
+
+    .booksmarksInfo {
+        .cardWrapper {
+            display: none;
+        }
+
+        .tableWrapper {
+            .bookmarkTable,
+            td,
+            th {
+                text-align: left;
+                color: $textColor;
+                width: 100%;
+                word-break: break-all;
+
+                .linkIcon {
+                    width: 15px;
+                    height: 15px;
+                    margin: 0.7em 0 0 0.25em;
+                }
+            }
+
+            tbody {
+                display: block;
+                max-height: 450px;
+                overflow-y: auto;
+            }
+
+            thead,
+            tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+        }
+    }
+    @include screenType(tablet) {
+        @include flexCenter;
+        margin-top: 6.5em;
+        margin-bottom: 0;
+
+        .filter {
+            min-width: 375px;
+
+            .filterField {
+                width: 78%;
+                min-height: 2em;
+            }
+
+            .searchIcon{
+                top: 1em;
+            }
+        }
+        .tableWrapper {
+            display: none;
+        }
+        .cardWrapper {
+            display: block !important;
+            width: 100%;
+            min-width: 375px;
+            max-height: 350px;
+            overflow-y: scroll;
+
+            .card {
+                padding-left: 0;
+                @include flexCenter;
+                @include flexColumn;
+                margin-top: 0;
+
+                .infoList {
+                    list-style: none;
+                    width: 300px;
+                    height: 150px;
+                    box-shadow: 0 0 0.25em rgb(0 0 0 / 15%);
+                    color: $textColor;
+                    @include flexCenter;
+                    @include flexColumn;
+                    margin: 1em;
+
+                    .infoCard {
+                        @include flexColumn;
+                        text-align: center;
+                        width: 100%;
+
+                        .bookMarkText {
+                            padding: 0.5em 0;
+                        }
+
+                        .tag {
+                            padding-bottom: 0.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

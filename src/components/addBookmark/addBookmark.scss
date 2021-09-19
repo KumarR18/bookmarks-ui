@@ -1,0 +1,39 @@
+@import '../../assets/scss/main.scss';
+
+.addbookmark {
+    width: calc(33vw - 4em);
+    @include flexColumn;
+
+    .addText {
+        font-size: 2em;
+        color: $textColor;
+        margin-bottom: 0.65em;
+    }
+    .form {
+        @include flexCenter;
+        @include flexColumn;
+
+        .inputField {
+            width: 94%;
+            padding: 1em 1em;
+            margin-bottom: 0.5em;
+            @include flexCenter;
+            border: 1px solid $greyColor;
+            border-radius: 0.25em;
+        }
+    }
+
+    @include screenType(tablet) {
+        min-width: 375px;
+        margin-left: 0;
+        margin-top: 1em;
+
+        .addText {
+            text-align: center;
+        }
+
+        .inputField {
+            width: 20em !important;
+        }
+    }
+}

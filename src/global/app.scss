@@ -1,0 +1,14 @@
+@import '../assets/scss/main.scss';
+
+html {
+    font-size: 16px;
+
+    body {
+        margin: 0;
+        background: $whiteColor;
+        font-family: 'Gill Sans', sans-serif;
+        box-sizing: border-box;
+        overflow: auto;
+        height: -webkit-fill-available;
+    }
+}

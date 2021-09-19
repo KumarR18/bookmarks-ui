@@ -1,0 +1,28 @@
+{
+  "bookmarks": [
+    {
+      "name": "gmx.co.ok",
+      "link": "https://www.gmx.co.uk/",
+      "tag": "Mail",
+      "id": 1
+    },
+    {
+      "name": "mail.com",
+      "link": "https://www.mail.com/",
+      "tag": "Mail",
+      "id": 2
+    },
+    {
+      "name": "GMX.NET",
+      "link": "https://www.gmx.net/",
+      "tag": "Mail, Germany",
+      "id": 3
+    },
+    {
+      "name": "WEB.DE",
+      "link": "https://web.de/",
+      "tag": "Mail, Germany",
+      "id": 4
+    }
+  ]
+}

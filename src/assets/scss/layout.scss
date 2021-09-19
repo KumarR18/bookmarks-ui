@@ -1,0 +1,22 @@
+@mixin flexCenter {
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexLeftAlignedVertically {
+    @include flexColumn;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@mixin flexLeftAlignedHorizontally {
+    display: flex;
+    justify-content: flex-start;
+   // align-items: center;
+}
